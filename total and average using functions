@@ -1,0 +1,23 @@
+
+2. Write a go program to calculate total and average of the students using functions
+package main()
+import "fmt"
+	func main(){
+		total(10,20)
+		average(30,40)
+		
+	}
+	total :=0
+
+	func total(n1 int, n2 int) {
+		total := n1 + n2
+		fmt.Println("total:", total)
+		
+	}
+
+	func average(){
+		average := (n1 + n2)/2
+		fmt.Println("average:", average)
+		
+	}
+
