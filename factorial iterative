@@ -1,0 +1,20 @@
+
+4. Write a go prgram to calculate factorial value of a given number using iterative approach
+
+
+	use for loop to calculate the factorial value
+	
+	package main
+
+	import "fmt"
+	
+	func main() {
+	
+		var num  int =10
+		var fact = 1
+	
+		for i := 1; i <=num; i++ {
+		   fact = fact * i
+		}
+		fmt.Println("The Factorial of ", num, " = ", fact)
+	}
