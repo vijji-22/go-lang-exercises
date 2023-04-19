@@ -1,0 +1,21 @@
+. Write a go program to print the fibonaci series using recursion under 50(something)
+
+    use recursion
+
+    0 1 1 2 3 5 8 13 21.....
+	
+  
+  
+  package main
+	import"fmt"
+	var x int = 0
+	
+	
+	func main(){
+		y:=1
+		for x:=0;x<=50;x++{
+		var z int = x+y
+		fmt.Println("fibonacci series is:",x,y,z)
+	
+	}
+	}
