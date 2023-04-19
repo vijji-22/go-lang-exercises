@@ -1,0 +1,25 @@
+ Write a program to print lowest marks of the student with name and marks
+ 
+
+package main()
+import "fmt"
+func main(){
+
+marks :=map[string]int{
+	"Alice":98
+	"Bob":45
+	"Charle":35
+	"Darwin":36
+}
+
+lowest := marks["Alice"]
+	var studentName string
+
+	for name, marks := range marks {
+		if marks < lowest {
+			lowest = marks
+			studentName = name
+		}
+	}
+	fmt.Println(lowest, studentName)
+}
