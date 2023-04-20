@@ -1,0 +1,13 @@
+defer 
+it print s the statement at the end of execution when defer keyword used
+
+panic
+entire program stops
+before panic, all statements are executed
+it is used when the run time error occurs
+i.e., run time error occurs it stops the that entire errors
+
+
+recover
+it is used when we need a recover statements
+it is used everytime panic is used
