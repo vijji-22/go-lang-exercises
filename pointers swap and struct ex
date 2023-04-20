@@ -1,0 +1,109 @@
+Do some problem on pointers 
+
+    x, y := 5,6
+
+    Using pointers try to swap the values
+
+    fmt.Println(x,y) 6,5
+    
+  package main
+
+import "fmt"
+
+func main() {
+	var x int = 5
+	var y int = 6
+	a := &x
+	b := &y
+
+	fmt.Println(x, y)
+	fmt.Println(&x, &y)
+	fmt.Println(a, b)
+	swap()
+}
+func swap() {
+
+	v := swap(&a, &b)
+	fmt.Println("the values changed")
+	fmt.Println(v)
+	fmt.Println(x, y)
+}
+
+    
+    
+   Create a Author and Book structs assign some data to it and print the values
+
+
+type Author sturct{
+author name string
+author city string
+author study string
+
+    }
+
+type Book struct{
+book name string
+book cost int
+book pages int
+
+    }
+
+result:= author details{"newton","london","btech"}
+result1:= book details{"titanic",30,400}
+
+
+var new result2 {
+author name="newton"
+author city="london"
+author study= "btech"
+}
+
+var new result3 {
+book name="titanic"
+book cost=40
+book pages=400b
+}
+
+result4:=Author{
+author name="newton"
+author city="london"
+author study="btech"
+}
+
+
+result5:=Book{
+book name="astrology"
+book pages=50
+book cost=500
+}
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
