@@ -1,0 +1,64 @@
+
+
+1. Define a Person struct with fields name and age. Create a method IsAdult() that return true if the person is 18 or older
+
+package main
+import"fmt"
+
+type Person struct{
+	name string 
+	age int
+}
+
+func (P Person) IsAdult() {
+	if p.age>18 {
+  fmt.Println("adult")
+  }else{
+  fmt.Println("no")
+}
+func main() {
+v:=Person{"vijaya",22}
+fmt.Println(v.IsAdult())
+}
+
+
+2. Create a Student struct with name, rollnumber, marks and grade fields. Implement a CalculateGrade() which sets grade filed based on the marks filed. 
+
+Assume  90 A+
+        80 B+
+	70 C+
+	60 D+
+	50 E+
+	<50 Fail
+	
+package main
+import"fmt"
+  
+	type Student struct{
+		name string
+		rollnumber int
+		marks int
+		grade string
+		}
+	
+	func (s Student)CalcuateGrade()string{
+		if (s.marks > 90){
+			return "A+"
+	}else if (s.marks >80){
+    	return  "B+"
+    }else if(s.marks>70){
+    	return "C+"
+    }else if(s.marks>60){
+   	return  "D+"
+    }else if(s.marks>50){
+     	return "+E"
+    }else {
+    return "fail"
+    }
+    }
+    
+	
+	func main(){
+s:= Student{"vijaya", 1, 90, " "}
+fmt.Println(s.CalculateGrade())
+	}
